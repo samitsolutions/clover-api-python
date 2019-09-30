@@ -1,7 +1,7 @@
 import requests
 
 
-class CustomerService(object):
+class Customer(object):
     def __init__(self, api_authorization, api_url, merchant_id):
         self.url = api_url.rstrip('/')
         self.merchant_id = merchant_id
@@ -15,7 +15,8 @@ class CustomerService(object):
         payload = {}
         # Send Request
         r = requests.get(self.url + '/v3/merchants/' + self.merchant_id + '/customers.csv/',
-                         auth=self.auth, timeout=30, params=payload)
+                         auth=self.auth,
+                         timeout=30, params=payload)
         return r.json()
 
     # Customers

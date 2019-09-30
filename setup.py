@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 install_requires = [
-    'requests==2.20.0'
+    'requests'
 ]
 
 tests_require = [
@@ -11,18 +11,18 @@ tests_require = [
     ]
 
 setup(
-    name='cloverapi-python',
-    version='0.0.1',
-    author='Matt Lisivick',
-    author_email='lisivickmatt@gmail.com',
+    name='clover-py',
+    version='0.0.2',
+    author='Yash B',
+    author_email='yash@samitsolutions.com',
     license='MIT',
-    url='https://github.com/mattlisiv/clover-api-python',
+    url='https://github.com/samitsolutions/clover-api-python',
     packages=find_packages(),
     install_requires=install_requires,
     tests_require=tests_require,
-    description='An unofficial Python client for the Clover API v3',
-    download_url='https://github.com/mattlisiv/clover-api-python/archive/master.zip',
-    keywords=['clover','api'],
+    description='An unofficial Python client for the Clover API',
+    download_url='https://github.com/samitsolutions/clover-api-python/archive/master.zip',
+    keywords=['clover', 'api'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',

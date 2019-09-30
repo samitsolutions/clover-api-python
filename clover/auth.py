@@ -1,7 +1,7 @@
 from requests.auth import AuthBase
 
 
-class CloverApiAuth(AuthBase):
+class Auth(AuthBase):
     # Provided by clover: https://docs.clover.com/build/oauth-2-0/
     def __init__(self, api_key):
         self.api_key = api_key

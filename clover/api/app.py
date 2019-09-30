@@ -1,7 +1,7 @@
 import requests
 
 
-class AppService(object):
+class App(object):
     def __init__(self, api_authorization, api_url, merchant_id):
         self.url = api_url.rstrip('/')
         self.merchant_id = merchant_id

@@ -1,7 +1,7 @@
 import requests
 
 
-class MerchantService(object):
+class Merchant(object):
     def __init__(self, api_authorization, api_url, merchant_id):
         self.url = api_url.rstrip('/')
         self.merchant_id = merchant_id
@@ -57,7 +57,7 @@ class MerchantService(object):
                           json=payload)
         return r.json()
 
-    # Default Service Charge
+    # Default  Charge
     def get_default_service_charge(self):
         # Define Payload
         payload = {}

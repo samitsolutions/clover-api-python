@@ -1,5 +1,8 @@
+# UPDATING LIBRARY - may not be stable
+WIP
+
 # Clover API Wrapper in Python #
-Python client for Clover Point Of Sale [API V3](https://www.clover.com/api_docs/)
+Python client for Clover Point Of Sale 
 
 ##### Provided under MIT License by Matt Lisivick.
 *Note: this library may be subtly broken or buggy. The code is released under

@@ -1,7 +1,7 @@
 import requests
 
 
-class OrderService(object):
+class Order(object):
     def __init__(self, api_authorization, api_url, merchant_id):
         self.url = api_url.rstrip('/')
         self.merchant_id = merchant_id
@@ -226,7 +226,7 @@ class OrderService(object):
             json=payload)
         return r.json()
 
-    # Service Charge
+    #  Charge
     def create_service_charge_for_order(self, order_id, service_charge):
         # Define Payload
         payload = service_charge
