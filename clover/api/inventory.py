@@ -43,12 +43,12 @@ class Inventory(object):
             params=payload)
         return r.json()
 
-    def get_inventory_item_by_id(self, inventory_id):
+    def get_inventory_item_by_id(self, item_id, payload):
         # Define Payload
-        payload = {}
+        # payload = {}
         # Send Request
         r = requests.get(
-            self.url + '/v3/merchants/' + self.merchant_id + '/items/' + inventory_id,
+            self.url + '/v3/merchants/' + self.merchant_id + '/items/' + item_id,
             auth=self.auth,
             timeout=30,
             params=payload)

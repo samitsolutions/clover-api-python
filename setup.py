@@ -12,7 +12,7 @@ tests_require = [
 
 setup(
     name='clover-py',
-    version='0.0.2',
+    version='0.0.3',
     author='Yash B',
     author_email='yash@samitsolutions.com',
     license='MIT',
